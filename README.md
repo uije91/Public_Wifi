@@ -22,3 +22,4 @@
 ![PUBLIC_WIFI-1704610483298-2](https://github.com/uije91/Public_Wifi/assets/131138445/b7a5ef9f-3496-4751-90b8-2232336fdfb7)
 
 
+## 시연 영상

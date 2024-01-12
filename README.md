@@ -3,7 +3,7 @@
 - OPEN API를 활용하여 자신의 위치 및 특정 위치에서 주변 와이파이를 찾는 기능 구현
 <br>
 
-## <br>사용 기술
+## 사용 기술
 
 - Language: JAVA / JSP
 - DB: MariaDB

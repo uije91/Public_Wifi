@@ -18,7 +18,7 @@ import java.util.List;
 public class WifiDAO {
     dbConn dbConn = new dbConn();
 
-    static final String KEY = "5376616562746a6436315863716b6e";
+    static final String KEY = "API KEY";
     static String baseUrl = "http://openapi.seoul.go.kr:8088/" + KEY + "/" + "json/TbPublicWifiInfo/";
     int wifiInsertCnt = 0;
 

@@ -23,7 +23,7 @@
 
 
 ## <br>시연 영상
-![[Video Label](http://img.youtube.com/vi/A0oYx44qVek&t=2s/0.jpg)](https://youtu.be/A0oYx44qVek&t=2s)
+[![Video Label](http://img.youtube.com/vi/A0oYx44qVek&t=2s/0.jpg)](https://youtu.be/A0oYx44qVek&t=2s)
 
 ## <br>프로젝트 구조
 - **JAVA**

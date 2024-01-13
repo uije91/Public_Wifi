@@ -140,8 +140,8 @@ public class WifiDAO {
                 pStmt.setString(11, wifi.getInsDate());
                 pStmt.setString(12, wifi.getInOutDoor());
                 pStmt.setString(13, wifi.getWifiConn());
-                pStmt.setString(14, wifi.getLnt());
-                pStmt.setString(15, wifi.getLat());
+                pStmt.setString(14, wifi.getLat());
+                pStmt.setString(15, wifi.getLnt());
                 pStmt.setString(16, wifi.getWorkDate());
                 int affected = pStmt.executeUpdate();
                 if (affected > 0) {
@@ -211,8 +211,8 @@ public class WifiDAO {
                     wifi.setInsDate((String) tmp.get("X_SWIFI_CNSTC_YEAR"));
                     wifi.setInOutDoor((String) tmp.get("X_SWIFI_INOUT_DOOR"));
                     wifi.setWifiConn((String) tmp.get("X_SWIFI_REMARS3"));
-                    wifi.setLnt((String) tmp.get("LNT"));
                     wifi.setLat((String) tmp.get("LAT"));
+                    wifi.setLnt((String) tmp.get("LNT"));
                     wifi.setWorkDate((String) tmp.get("WORK_DTTM"));
                     wifiList.add(wifi);
                 }

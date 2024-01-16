@@ -25,71 +25,7 @@
 ## <br>시연 영상
 [![Video Label](http://img.youtube.com/vi/87FVzyhuf4E/0.jpg)](https://youtu.be/87FVzyhuf4E)
 
-## <br>프로젝트 구조
-- **JAVA**
-  - controller
-    - dbConn: JDBC
-  - dao
-    - BookmarkDAO
-      - getBookmarkInfo(): id를 이용하여 북마크 정보 가져오기
-      - getBookmarkList(): 북마크 목록 출력
-      - insertBookmark(): 북마크 추가
-      - deleteBookmark(): 북마크 삭제
-    - BookmarkGroupDAO
-      - getBGInfo(): id를 이용하여 북마크그룹에 정보 조회
-      - getBGList(): 북마크그룹 목록 출력
-      - insertBG(): 북마크그룹 추가
-      - updateBG(): 북마크그룹 수정
-      - deleteBG(): 북마크그룹 삭제
-    - HistoryDAO
-      - insertHistory(): WIFI 검색 시 위치 히스토리 자동 저장
-      - getHistoryList(): 저장된 History 목록 출력
-      - deleteHistory(): 저장된 History 삭제
-    - WifiDAO: 와이파이 DAO
-      - getNearbyWifiList(): 위도,경도값을 기준으로 근처 20개의 WIFI정보 출력
-      - insertWifi(): 파싱된 데이터를 DB에 추가
-      - insertAPI(): JSON을 파싱하여 insertWifi() 실행
-      - wifiCnt(): OPEN API 갯수 체크
-  - dto
-    - BookmarkDTO: 북마크 DTO
-    - BookmarkGroupDTO: 북마크그룹 DTO
-    - WifiDTO: 와이파이 DTO
-    - HistoryDTO: 와이파이 조회기록 DTO
-- **webapp**
-  - resources
-    - CSS
-      - style.css: 사용된css파일
-
-    - JS
-      - script.js
-        - getLocation(): geolocation을 이용하여 현재 위치 가져오기
-        - getnearbyWifiList(): input값을 전달받아서 get방식으로 주소 호출
-
-  - include
-    - header.jsp: 전체페이지의 header부분
-    - menu.jsp: 메뉴탭 jsp
-
-  - history
-    - history.jsp: 주변 와이파이 검색시 자동 저장 되는 위치 히스토리 목록 조회 및 삭제
-    - history-delete.jsp: 히스토리 삭제 쿼리 실행 페이지
-  - bookmark
-    - bookmark-list.jsp: 북마크 보기 페이지
-    - bookmark-add-submit.jsp: 북마크 추가 쿼리 실행 페이지
-    - bookmark-delete.jsp: 북마크 삭제 페이지
-    - bookmark-delete-submit.jsp: 북마크 삭제 쿼리 실행 페이지
-  - bookmark-group
-    - bookmark-group.jsp: 북마크 그룹 관리 페이지
-    - bookmark-group-add.jsp: 북마크 그룹 추가 페이지
-    - bookmark-group-add-submit.jsp: 북마크 그룹 추가 쿼리 실행 페이지
-    - bookmark-group-edit.jsp: 북마크 그룹 수정 페이지
-    - bookmark-group-edit-submit.jsp: 북마크 그룹 수정 쿼리 실행 페이지
-    - bookmark-group-delete.jsp: 북마크 그룹 삭제 페이지
-    - bookmark-group-delete-submit: 북마크 그룹 삭제 쿼리 실행 페이지
-  - index.jsp: Home화면
-  - load-wifi.jsp: Open API를 통해 DB에 저장 후 출력되는 페이지(중복 제외한 추가 데이터 개수 출력)
-  - detail.jsp: 위치정보로 검색된 WIFI의 상세정보 조회
- 
-  ## <br>SQL Query
+## <br>SQL Query
   ```sql
   # 데이터베이스 생성
   create database PUBLIC_WIFI
